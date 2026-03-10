@@ -278,7 +278,7 @@ func (c *Client) initialize3() error {
 	}
 
 	err = c.mrw.Write(&message.SetChunkSize{
-		Value: 65536,
+		Value: 4096,
 	})
 	if err != nil {
 		return err
